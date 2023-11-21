@@ -4,6 +4,7 @@ import Cover from "../../../img/cover.jpg";
 import Profile from "../../../img/profileImg.jpg";
 
 const index = () => {
+  const ProfilePage = false;
   return (
     <div className="ProfileCard">
       <div className="ProfileImg">
@@ -28,11 +29,20 @@ const index = () => {
             <span>15</span>
             <span>Followers</span>
           </div>
+
+          {ProfilePage && (
+            <>
+              <div className="vl"></div>
+              <div className="Follow">
+                <span>3</span>
+                <span>Posts</span>
+              </div>
+            </>
+          )}
         </div>
         <hr />
       </div>
-
-      <span>My Profile</span>
+      {ProfilePage ? " " : <span>My Profile</span>}
     </div>
   );
 };

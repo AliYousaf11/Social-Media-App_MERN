@@ -50,7 +50,7 @@
 }
 .FollowStatus > div {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
 }
 .Follow {
   display: flex;
