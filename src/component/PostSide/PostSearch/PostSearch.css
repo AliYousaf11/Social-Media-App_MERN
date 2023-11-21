@@ -48,3 +48,20 @@
 .option:hover {
   cursor: pointer;
 }
+
+.previewImage {
+  position: relative;
+}
+.previewImage > svg {
+  position: absolute;
+  top: 1rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+.previewImage > img {
+  width: 100%;
+  max-height: 20rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
