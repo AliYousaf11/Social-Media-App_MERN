@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./infoCard.css";
 import UIPenn from "@iconscout/react-unicons/icons/uil-pen";
-const index = () => {
+import Model from "../Model"
+const Index = () => {
+  const [model, setModel] = useState(false)
+
+
   return (
     <div className="InfoCard">
       <div className="infoHead">
         <h4>Your Info</h4>
         <div>
-          <UIPenn width={"2rem"} height={"1.2rem"} />
+          <UIPenn width={"2rem"} height={"1.2rem"} onClick={()=>setModel(true)}/>
+          <Model model={model} setModel={setModel}/>
         </div>
       </div>
 
@@ -37,4 +42,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
